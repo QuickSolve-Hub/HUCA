@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --bg: rgb(0, 0, 0);
+    --bg-temp: rgb(197, 197, 197);
+    --bg-2: #e8f2f3;
+    --main2: #00dde9;
+    }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    background: var(--bg-2);
+ }
+ html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  html::-webkit-scrollbar-thumb {
+ 
+    border-radius: 5rem;
+  }
+  body {
+    background: var(-bg);
+  }
+/* heading section styling*/
+.al-main{
+    display: flex;
+    flex-direction: column;
+}
+.sect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 70px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 2px 2px 2px rgb(18, 247, 255);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+
+.sect .logo img{
+    border-radius: 30%;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 2px solid ;
+  
+    
+}
+.sect .input input{
+    outline: none;
+    background: none;
+    border:  2px solid rgb(41, 40, 40);
+    height: 40px;
+    width: 600px;
+    border-radius: 6px;
+    padding: 0 2.25rem;
+    background-image: none;
+    font-size: 19px;
+    font-weight: 500;
+
+}
+.sect .input input:hover{
+    outline: #00f2ff;
+}
+.sect .input input::placeholer{
+    text-align: center;
+    padding: 20px 10px;
+}
+.sect .text h2{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav{
+    display: inline;
+    margin-top: 30px;
+    padding-top: 50px;
+    background-color: rgb(197, 197, 197);
+    position: fixed;
+    font-size: 15px;
+    font-weight: bold;
+    width: 300px;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav .navB{
+    padding: 10px 40px;
+}
+.nav .navB nav li{
+    padding: 10px 15px;
+}
+.nav .navB nav a{
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+.nav .calc-button a{
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-top: 60px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #3d3c3c;
+    margin-left: 40px;
+    transition: linear 2s ease-in-out;
+}
+.nav .calc-button:hover a{
+    opacity: 0.9;
+}
+.nav .calc-button{
+    margin-top: 90%;
+}
+.main{
+    height: 400px;
+    color: black;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.main .sub-text{
+    display: flex;
+    margin-top: 10px;
+}
+.main .sub-text a{
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(59, 58, 58);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 57%;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.main .sub-text p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.text-2{
+    font-size: 15px;
+    padding-right: 900px;
+}
+.main .img-1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.main .right-arrow img{
+    transform: rotate(-90deg);
+    height: 20px;
+    height: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+.main .main-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-top: 10px;
+}
+.sec .main-2{
+background: #a3a3a3;
+align-items: center;
+}
+
+/* media quaeries */
+
+@media (max-width: 778px){
+    .nav{
+        display: none;
+    }
+    .main{
+        height: 400px;
+        color: black;
+        font-size: 20px;
+        margin-left: 2%;
+        margin-top: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
